@@ -1,0 +1,310 @@
+{
+  "pt": {
+    "nav": {
+      "about": "Sobre",
+      "specialties": "Especialidades",
+      "certificates": "Certificados",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "hero": {
+      "greeting": "Olá, eu sou",
+      "name": "Messias Sávio",
+      "professions": [
+        "Machine Learning Engineer 🧠",
+        "Data Engineer 🧭", 
+        "MLOps Engineer 🤖",
+        "Data Scientist 📊"
+      ],
+      "description": "Especialista em <strong>Machine Learning</strong>, <strong>Data Engineering</strong> e <strong>MLOps</strong> com experiência em análise de dados e desenvolvimento de soluções baseadas em IA.",
+      "stats": {
+        "certificates": "Certificados",
+        "experience": "Anos Experience",
+        "projects": "Projetos"
+      },
+      "buttons": {
+        "downloadCV": "Download CV",
+        "contact": "Contato"
+      }
+    },
+    "specialties": {
+      "title": "Minhas Especialidades",
+      "subtitle": "Focado nas principais áreas de tecnologia e inteligência artificial",
+      "cards": {
+        "mlEngineer": {
+          "title": "Machine Learning Engineer",
+          "description": "Desenvolvimento e implementação de modelos de ML em produção, com foco em performance e escalabilidade."
+        },
+        "dataEngineer": {
+          "title": "Data Engineer",
+          "description": "Construção de pipelines de dados robustos e escaláveis para processamento e análise de grandes volumes."
+        },
+        "mlopsEngineer": {
+          "title": "MLOps Engineer",
+          "description": "Automação de pipelines ML, CI/CD para modelos e monitoramento em produção na nuvem."
+        },
+        "dataScientist": {
+          "title": "Data Scientist",
+          "description": "Análise estatística avançada, modelagem preditiva e extração de insights valiosos dos dados."
+        }
+      }
+    },
+    "certificates": {
+      "featured": {
+        "title": "Certificados em Destaque",
+        "subtitle": "Principais conquistas na minha jornada de aprendizado",
+        "dataCyber": {
+          "title": "Ciência de Dados e CyberSecurity",
+          "description": "Formação avançada combinando análise de dados com segurança cibernética"
+        },
+        "cloud": {
+          "title": "Cloud Computing",
+          "description": "Especialização em soluções de nuvem para arquiteturas escaláveis"
+        },
+        "chatbot": {
+          "title": "Do Zero ao Primeiro Chatbot",
+          "description": "Desenvolvimento completo de chatbots com IA conversacional"
+        },
+        "prompts": {
+          "title": "Engenharia de Prompts",
+          "description": "Técnicas avançadas para otimização de modelos de linguagem"
+        },
+        "github": {
+          "title": "GitHub",
+          "description": "Controle de versão e colaboração em projetos de desenvolvimento"
+        },
+        "ifood": {
+          "title": "Potência Tech iFood",
+          "description": "Bootcamp completo de programação do zero ao avançado"
+        }
+      },
+      "all": {
+        "title": "Todos os Certificados",
+        "subtitle": "Minha jornada de aprendizado contínuo"
+      },
+      "filters": {
+        "all": "Todos",
+        "mlAi": "ML & AI",
+        "dataScience": "Data Science",
+        "backend": "Backend",
+        "cloudDevops": "Cloud & DevOps",
+        "softSkills": "Soft Skills",
+        "frontend": "Frontend"
+      },
+      "viewCert": "Ver Certificado",
+      "loadMore": "Carregar Mais"
+    },
+    "projects": {
+      "title": "Projetos em Destaque",
+      "subtitle": "Soluções desenvolvidas com foco em ML, Data e Backend",
+      "viewOnGithub": "Ver no GitHub",
+      "viewDemo": "Ver Demo",
+      "inDevelopment": "Em desenvolvimento",
+      "viewAllOnGithub": "Ver Todos no GitHub",
+      "items": {
+        "cryptographer": {
+          "title": "Criptografador e Descriptografador",
+          "description": "Aplicação web para criptografia de textos usando algoritmos personalizados"
+        },
+        "numberGame": {
+          "title": "Jogo Número Secreto",
+          "description": "Jogo interativo com algoritmo de adivinhação e análise de padrões"
+        },
+        "onePiece": {
+          "title": "Landing Page One Piece",
+          "description": "Site responsivo com animações e interações avançadas"
+        },
+        "xMen": {
+          "title": "Seletor de Personagens X-Men",
+          "description": "Aplicação interativa com manipulação dinâmica de dados"
+        },
+        "mlRecommendation": {
+          "title": "Sistema de Recomendação ML",
+          "description": "Sistema inteligente de recomendações usando machine learning"
+        },
+        "etlPipeline": {
+          "title": "Pipeline de Dados ETL",
+          "description": "Pipeline automatizado para processamento de grandes volumes de dados"
+        }
+      }
+    },
+    "contact": {
+      "title": "Vamos Trabalhar Juntos?",
+      "subtitle": "Entre em contato para discutir oportunidades em ML, Data Engineering ou MLOps",
+      "email": {
+        "label": "Email"
+      },
+      "whatsapp": {
+        "label": "WhatsApp"
+      },
+      "location": {
+        "label": "Localização",
+        "value": "Brasil - Disponível para trabalho remoto"
+      },
+      "form": {
+        "name": "Seu nome completo",
+        "email": "Seu melhor email",
+        "subject": "Assunto",
+        "message": "Sua mensagem",
+        "send": "Enviar Mensagem"
+      }
+    },
+    "footer": {
+      "copyright": "&copy; 2024 Messias Sávio. Todos os direitos reservados."
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About",
+      "specialties": "Specialties",
+      "certificates": "Certificates",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "hero": {
+      "greeting": "Hello, I'm",
+      "name": "Messias Sávio",
+      "professions": [
+        "Machine Learning Engineer 🧠",
+        "Data Engineer 🧭", 
+        "MLOps Engineer 🤖",
+        "Data Scientist 📊"
+      ],
+      "description": "Specialist in <strong>Machine Learning</strong>, <strong>Data Engineering</strong> and <strong>MLOps</strong> with experience in data analysis and AI-based solutions development.",
+      "stats": {
+        "certificates": "Certificates",
+        "experience": "Years Experience",
+        "projects": "Projects"
+      },
+      "buttons": {
+        "downloadCV": "Download CV",
+        "contact": "Contact"
+      }
+    },
+    "specialties": {
+      "title": "My Specialties",
+      "subtitle": "Focused on key areas of technology and artificial intelligence",
+      "cards": {
+        "mlEngineer": {
+          "title": "Machine Learning Engineer",
+          "description": "Development and implementation of ML models in production, focusing on performance and scalability."
+        },
+        "dataEngineer": {
+          "title": "Data Engineer",
+          "description": "Building robust and scalable data pipelines for processing and analyzing large volumes."
+        },
+        "mlopsEngineer": {
+          "title": "MLOps Engineer",
+          "description": "ML pipeline automation, CI/CD for models and production monitoring in the cloud."
+        },
+        "dataScientist": {
+          "title": "Data Scientist",
+          "description": "Advanced statistical analysis, predictive modeling and valuable data insights extraction."
+        }
+      }
+    },
+    "certificates": {
+      "featured": {
+        "title": "Featured Certificates",
+        "subtitle": "Main achievements in my learning journey",
+        "dataCyber": {
+          "title": "Data Science and CyberSecurity",
+          "description": "Advanced training combining data analysis with cybersecurity"
+        },
+        "cloud": {
+          "title": "Cloud Computing",
+          "description": "Specialization in cloud solutions for scalable architectures"
+        },
+        "chatbot": {
+          "title": "From Zero to First Chatbot",
+          "description": "Complete development of chatbots with conversational AI"
+        },
+        "prompts": {
+          "title": "Prompt Engineering",
+          "description": "Advanced techniques for language model optimization"
+        },
+        "github": {
+          "title": "GitHub",
+          "description": "Version control and collaboration in development projects"
+        },
+        "ifood": {
+          "title": "Potência Tech iFood",
+          "description": "Complete programming bootcamp from zero to advanced"
+        }
+      },
+      "all": {
+        "title": "All Certificates",
+        "subtitle": "My continuous learning journey"
+      },
+      "filters": {
+        "all": "All",
+        "mlAi": "ML & AI",
+        "dataScience": "Data Science",
+        "backend": "Backend",
+        "cloudDevops": "Cloud & DevOps",
+        "softSkills": "Soft Skills",
+        "frontend": "Frontend"
+      },
+      "viewCert": "View Certificate",
+      "loadMore": "Load More"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "Solutions developed focusing on ML, Data and Backend",
+      "viewOnGithub": "View on GitHub",
+      "viewDemo": "View Demo",
+      "inDevelopment": "In development",
+      "viewAllOnGithub": "View All on GitHub",
+      "items": {
+        "cryptographer": {
+          "title": "Text Encryptor and Decryptor",
+          "description": "Web application for text encryption using custom algorithms"
+        },
+        "numberGame": {
+          "title": "Secret Number Game",
+          "description": "Interactive game with guessing algorithm and pattern analysis"
+        },
+        "onePiece": {
+          "title": "One Piece Landing Page",
+          "description": "Responsive website with animations and advanced interactions"
+        },
+        "xMen": {
+          "title": "X-Men Character Selector",
+          "description": "Interactive application with dynamic data manipulation"
+        },
+        "mlRecommendation": {
+          "title": "ML Recommendation System",
+          "description": "Intelligent recommendation system using machine learning"
+        },
+        "etlPipeline": {
+          "title": "ETL Data Pipeline",
+          "description": "Automated pipeline for processing large data volumes"
+        }
+      }
+    },
+    "contact": {
+      "title": "Let's Work Together?",
+      "subtitle": "Get in touch to discuss opportunities in ML, Data Engineering or MLOps",
+      "email": {
+        "label": "Email"
+      },
+      "whatsapp": {
+        "label": "WhatsApp"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Brazil - Available for remote work"
+      },
+      "form": {
+        "name": "Your full name",
+        "email": "Your best email",
+        "subject": "Subject",
+        "message": "Your message",
+        "send": "Send Message"
+      }
+    },
+    "footer": {
+      "copyright": "&copy; 2024 Messias Sávio. All rights reserved."
+    }
+  }
+}

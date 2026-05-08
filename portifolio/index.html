@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messias Sávio - ML Engineer | Data Engineer | MLOps | Data Scientist</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <nav class="menu">
+          <ul>
+            <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+            <li><a href="#especialidades" data-i18n="nav.specialties">Especialidades</a></li>
+            <li><a href="#certificados" data-i18n="nav.certificates">Certificados</a></li>
+            <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+            <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="pt">
+            <img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="PT" width="20" height="15">
+            PT
+          </button>
+          <button class="lang-btn" data-lang="en">
+            <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" alt="EN" width="20" height="15">
+            EN
+          </button>
+        </div>
+
+        <div class="menu-mobile">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="sobre">
+      <div class="hero-content">
+        <div class="hero-info">
+          <h1 class="hero-title">
+            <span class="greeting" data-i18n="hero.greeting">Olá, eu sou</span>
+            <span class="name" data-i18n="hero.name">Messias Sávio</span>
+            <span class="profession" id="animated-profession"></span>
+          </h1>
+          
+          <p class="hero-description" data-i18n="hero.description">
+            Especialista em <strong>Machine Learning</strong>, <strong>Data Engineering</strong> e <strong>MLOps</strong> 
+            com experiência em análise de dados e desenvolvimento de soluções baseadas em IA.
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label" data-i18n="hero.stats.certificates">Certificados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label" data-i18n="hero.stats.experience">Anos Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">15+</span>
+              <span class="stat-label" data-i18n="hero.stats.projects">Projetos</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="../Curriculo_Messias_Savio_Atualizado.pdf" download class="btn-primary" id="downloadCV">
+              <i class="fas fa-download"></i>
+              <span data-i18n="hero.buttons.downloadCV">Download CV</span>
+            </a>
+            <a href="#contato" class="btn-secondary">
+              <i class="fas fa-envelope"></i>
+              <span data-i18n="hero.buttons.contact">Contato</span>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/messias-savio/" title="LinkedIn" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/MessiasSavio" title="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://wa.me/5583999999999" title="WhatsApp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/messias.savio/" title="Instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="./src/imagens/messias-perfil.png" alt="Messias Sávio - ML Engineer" />
+            <div class="image-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section class="especialidades" id="especialidades">
+      <div class="container">
+        <h2 class="section-title" data-i18n="specialties.title">Minhas Especialidades</h2>
+        <p class="section-subtitle" data-i18n="specialties.subtitle">Focado nas principais áreas de tecnologia e inteligência artificial</p>
+        
+        <div class="especialidades-grid">
+          <div class="especialidade-card ml-engineer">
+            <div class="card-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 data-i18n="specialties.cards.mlEngineer.title">Machine Learning Engineer</h3>
+            <p data-i18n="specialties.cards.mlEngineer.description">Desenvolvimento e implementação de modelos de ML em produção, com foco em performance e escalabilidade.</p>
+            <div class="tech-stack">
+              <span class="tech">Python</span>
+              <span class="tech">TensorFlow</span>
+              <span class="tech">PyTorch</span>
+              <span class="tech">Scikit-learn</span>
+            </div>
+          </div>
+
+          <div class="especialidade-card data-engineer">
+            <div class="card-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 data-i18n="specialties.cards.dataEngineer.title">Data Engineer</h3>
+            <p data-i18n="specialties.cards.dataEngineer.description">Construção de pipelines de dados robustos e escaláveis para processamento e análise de grandes volumes.</p>
+            <div class="tech-stack">
+              <span class="tech">Apache Spark</span>
+              <span class="tech">Kafka</span>
+              <span class="tech">SQL</span>
+              <span class="tech">NoSQL</span>
+            </div>
+          </div>
+
+          <div class="especialidade-card mlops-engineer">
+            <div class="card-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3 data-i18n="specialties.cards.mlopsEngineer.title">MLOps Engineer</h3>
+            <p data-i18n="specialties.cards.mlopsEngineer.description">Automação de pipelines ML, CI/CD para modelos e monitoramento em produção na nuvem.</p>
+            <div class="tech-stack">
+              <span class="tech">Docker</span>
+              <span class="tech">Kubernetes</span>
+              <span class="tech">AWS</span>
+              <span class="tech">MLflow</span>
+            </div>
+          </div>
+
+          <div class="especialidade-card data-scientist">
+            <div class="card-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 data-i18n="specialties.cards.dataScientist.title">Data Scientist</h3>
+            <p data-i18n="specialties.cards.dataScientist.description">Análise estatística avançada, modelagem preditiva e extração de insights valiosos dos dados.</p>
+            <div class="tech-stack">
+              <span class="tech">R</span>
+              <span class="tech">Pandas</span>
+              <span class="tech">Jupyter</span>
+              <span class="tech">Tableau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificados em Destaque -->
+    <section class="certificados-destaque">
+      <div class="container">
+        <h2 class="section-title" data-i18n="certificates.featured.title">Certificados em Destaque</h2>
+        <p class="section-subtitle" data-i18n="certificates.featured.subtitle">Principais conquistas na minha jornada de aprendizado</p>
+        
+        <div class="destaques-grid">
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fas fa-award"></i>
+              <h3 data-i18n="certificates.featured.dataCyber.title">Ciência de Dados e CyberSecurity</h3>
+            </div>
+            <p data-i18n="certificates.featured.dataCyber.description">Formação avançada combinando análise de dados com segurança cibernética</p>
+            <a href="../certificados/Destaques/Ciência de Dados e CyberSecurity.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fas fa-cloud"></i>
+              <h3 data-i18n="certificates.featured.cloud.title">Cloud Computing</h3>
+            </div>
+            <p data-i18n="certificates.featured.cloud.description">Especialização em soluções de nuvem para arquiteturas escaláveis</p>
+            <a href="../certificados/Destaques/Cloud Computing.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fas fa-robot"></i>
+              <h3 data-i18n="certificates.featured.chatbot.title">Do Zero ao Primeiro Chatbot</h3>
+            </div>
+            <p data-i18n="certificates.featured.chatbot.description">Desenvolvimento completo de chatbots com IA conversacional</p>
+            <a href="../certificados/Destaques/do zero ao primeiro chatbot.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fas fa-comments"></i>
+              <h3 data-i18n="certificates.featured.prompts.title">Engenharia de Prompts</h3>
+            </div>
+            <p data-i18n="certificates.featured.prompts.description">Técnicas avançadas para otimização de modelos de linguagem</p>
+            <a href="../certificados/Destaques/engenharia de Prompts.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fab fa-github"></i>
+              <h3 data-i18n="certificates.featured.github.title">GitHub</h3>
+            </div>
+            <p data-i18n="certificates.featured.github.description">Controle de versão e colaboração em projetos de desenvolvimento</p>
+            <a href="../certificados/Destaques/github.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+
+          <div class="destaque-card">
+            <div class="card-header">
+              <i class="fas fa-code"></i>
+              <h3 data-i18n="certificates.featured.ifood.title">Potência Tech iFood</h3>
+            </div>
+            <p data-i18n="certificates.featured.ifood.description">Bootcamp completo de programação do zero ao avançado</p>
+            <a href="../certificados/Destaques/Potência Tech iFood - Programação do Zero.pdf" target="_blank" class="view-cert">
+              <i class="fas fa-external-link-alt"></i>
+              <span data-i18n="certificates.viewCert">Ver Certificado</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Todos os Certificados -->
+    <section class="certificados" id="certificados">
+      <div class="container">
+        <h2 class="section-title" data-i18n="certificates.all.title">Todos os Certificados</h2>
+        <p class="section-subtitle" data-i18n="certificates.all.subtitle">Minha jornada de aprendizado contínuo</p>
+        
+        <div class="certificados-filter">
+          <button class="filter-btn active" data-filter="all" data-i18n="certificates.filters.all">Todos</button>
+          <button class="filter-btn" data-filter="ml-ai" data-i18n="certificates.filters.mlAi">ML & AI</button>
+          <button class="filter-btn" data-filter="data-science" data-i18n="certificates.filters.dataScience">Data Science</button>
+          <button class="filter-btn" data-filter="backend" data-i18n="certificates.filters.backend">Backend</button>
+          <button class="filter-btn" data-filter="cloud-devops" data-i18n="certificates.filters.cloudDevops">Cloud & DevOps</button>
+          <button class="filter-btn" data-filter="soft-skills" data-i18n="certificates.filters.softSkills">Soft Skills</button>
+          <button class="filter-btn" data-filter="frontend" data-i18n="certificates.filters.frontend">Frontend</button>
+        </div>
+
+        <div class="certificados-grid" id="certificados-container">
+          <!-- Certificados serão carregados dinamicamente via JavaScript -->
+        </div>
+
+        <button class="load-more-btn" id="load-more-certificates" data-i18n="certificates.loadMore">Carregar Mais</button>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projetos" id="projetos">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects.title">Projetos em Destaque</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Soluções desenvolvidas com foco em ML, Data e Backend</p>
+
+        <div class="projetos-grid">
+          <div class="projeto-card ml-project">
+            <div class="projeto-image">
+              <img src="./src/imagens/alura_decodificador.png" alt="Criptografador e Descriptografador" />
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="https://github.com/MessiasSavio/decodificador-genial" target="_blank" data-i18n-title="projects.viewOnGithub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" data-i18n-title="projects.viewDemo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.cryptographer.title">Criptografador e Descriptografador</h3>
+              <p data-i18n="projects.items.cryptographer.description">Aplicação web para criptografia de textos usando algoritmos personalizados</p>
+              <div class="projeto-tech">
+                <span class="tech">JavaScript</span>
+                <span class="tech">HTML</span>
+                <span class="tech">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto-card data-project">
+            <div class="projeto-image">
+              <img src="./src/imagens/jogoNumeroSecreto.png" alt="Jogo Número Secreto" />
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="https://github.com/MessiasSavio/jogo-numero-secreto" target="_blank" data-i18n-title="projects.viewOnGithub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" data-i18n-title="projects.viewDemo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.numberGame.title">Jogo Número Secreto</h3>
+              <p data-i18n="projects.items.numberGame.description">Jogo interativo com algoritmo de adivinhação e análise de padrões</p>
+              <div class="projeto-tech">
+                <span class="tech">JavaScript</span>
+                <span class="tech">Algoritmos</span>
+                <span class="tech">Lógica</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto-card fullstack-project">
+            <div class="projeto-image">
+              <img src="./src/imagens/projeto-one-piece.png" alt="Landing Page One Piece" />
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="https://github.com/MessiasSavio/projeto-one-piece" target="_blank" data-i18n-title="projects.viewOnGithub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" data-i18n-title="projects.viewDemo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.onePiece.title">Landing Page One Piece</h3>
+              <p data-i18n="projects.items.onePiece.description">Site responsivo com animações e interações avançadas</p>
+              <div class="projeto-tech">
+                <span class="tech">React</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">Animations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projeto-card backend-project">
+            <div class="projeto-image">
+              <img src="./src/imagens/projeto-x-men.png" alt="Seletor X-Men" />
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="https://github.com/MessiasSavio/x-men-selector" target="_blank" data-i18n-title="projects.viewOnGithub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" target="_blank" data-i18n-title="projects.viewDemo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.xMen.title">Seletor de Personagens X-Men</h3>
+              <p data-i18n="projects.items.xMen.description">Aplicação interativa com manipulação dinâmica de dados</p>
+              <div class="projeto-tech">
+                <span class="tech">JavaScript</span>
+                <span class="tech">DOM</span>
+                <span class="tech">API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projetos ML/Data (placeholder para futuros projetos) -->
+          <div class="projeto-card ml-project">
+            <div class="projeto-image">
+              <div class="placeholder-project">
+                <i class="fas fa-brain"></i>
+                <span>ML Project</span>
+              </div>
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="#" target="_blank" data-i18n-title="projects.inDevelopment">
+                    <i class="fas fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.mlRecommendation.title">Sistema de Recomendação ML</h3>
+              <p data-i18n="projects.items.mlRecommendation.description">Sistema inteligente de recomendações usando machine learning</p>
+              <div class="projeto-tech">
+                <span class="tech">Python</span>
+                <span class="tech">Scikit-learn</span>
+                <span class="tech">Pandas</span>
+              </div>
+              <div class="projeto-status" data-i18n="projects.inDevelopment">Em desenvolvimento</div>
+            </div>
+          </div>
+
+          <div class="projeto-card data-project">
+            <div class="projeto-image">
+              <div class="placeholder-project">
+                <i class="fas fa-chart-bar"></i>
+                <span>Data Pipeline</span>
+              </div>
+              <div class="projeto-overlay">
+                <div class="projeto-links">
+                  <a href="#" target="_blank" data-i18n-title="projects.inDevelopment">
+                    <i class="fas fa-code"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projeto-content">
+              <h3 data-i18n="projects.items.etlPipeline.title">Pipeline de Dados ETL</h3>
+              <p data-i18n="projects.items.etlPipeline.description">Pipeline automatizado para processamento de grandes volumes de dados</p>
+              <div class="projeto-tech">
+                <span class="tech">Apache Spark</span>
+                <span class="tech">Python</span>
+                <span class="tech">SQL</span>
+              </div>
+              <div class="projeto-status" data-i18n="projects.inDevelopment">Em desenvolvimento</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-projects">
+          <a href="https://github.com/MessiasSavio" target="_blank" class="btn-secondary">
+            <i class="fab fa-github"></i>
+            <span data-i18n="projects.viewAllOnGithub">Ver Todos no GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.title">Vamos Trabalhar Juntos?</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">Entre em contato para discutir oportunidades em ML, Data Engineering ou MLOps</p>
+        
+        <div class="contato-content">
+          <div class="contato-info">
+            <div class="contato-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3 data-i18n="contact.email.label">Email</h3>
+                <p>messias.savio@email.com</p>
+              </div>
+            </div>
+            
+            <div class="contato-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3 data-i18n="contact.whatsapp.label">WhatsApp</h3>
+                <p>+55 (83) 99999-9999</p>
+              </div>
+            </div>
+            
+            <div class="contato-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3 data-i18n="contact.location.label">Localização</h3>
+                <p data-i18n="contact.location.value">Brasil - Disponível para trabalho remoto</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-form">
+            <form>
+              <div class="form-group">
+                <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Seu nome completo" required>
+              </div>
+              <div class="form-group">
+                <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Seu melhor email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" data-i18n-placeholder="contact.form.subject" placeholder="Assunto">
+              </div>
+              <div class="form-group">
+                <textarea data-i18n-placeholder="contact.form.message" placeholder="Sua mensagem" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="contact.form.send">Enviar Mensagem</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p data-i18n="footer.copyright">&copy; 2024 Messias Sávio. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="#sobre" data-i18n="nav.about">Sobre</a>
+          <a href="#especialidades" data-i18n="nav.specialties">Especialidades</a>
+          <a href="#certificados" data-i18n="nav.certificates">Certificados</a>
+          <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+
+  </body>
+</html>
