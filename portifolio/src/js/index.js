@@ -78,8 +78,8 @@ function updateCVDownload() {
     const downloadBtn = document.getElementById('downloadCV');
     if (downloadBtn) {
         const cvFiles = {
-            'pt': '../Curriculo_Messias_Savio_Atualizado.pdf',
-            'en': '../Resume_Messias_Savio_English.pdf'
+            'pt': './Resume_Messias_Savio_English.pdf',
+            'en': './Resume_Messias_Savio_English.pdf'
         };
         
         downloadBtn.href = cvFiles[currentLanguage] || cvFiles['pt'];
@@ -237,7 +237,7 @@ function createCertificateCard(filename, category) {
         </div>
         <h3>${name}</h3>
         <p class="certificate-category">${getCategoryDisplayName(category)}</p>
-        <a href="../certificados/${folderName}/${filename}" target="_blank" class="view-certificate">
+        <a href="./certificados/${folderName}/${filename}" target="_blank" class="view-certificate">
             <i class="fas fa-external-link-alt"></i>
             Ver Certificado
         </a>
