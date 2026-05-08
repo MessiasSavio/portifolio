@@ -78,7 +78,7 @@ function updateCVDownload() {
     const downloadBtn = document.getElementById('downloadCV');
     if (downloadBtn) {
         const cvFiles = {
-            'pt': './Resume_Messias_Savio_English.pdf',
+            'pt': './Curriculo_Messias_Savio_Atualizado.pdf',
             'en': './Resume_Messias_Savio_English.pdf'
         };
         

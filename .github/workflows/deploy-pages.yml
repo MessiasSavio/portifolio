@@ -33,6 +33,7 @@ jobs:
       - name: Prepare deploy files
         run: |
           cp -R ./certificados ./portifolio/certificados
+          cp ./Curriculo_Messias_Savio_Atualizado.pdf ./portifolio/Curriculo_Messias_Savio_Atualizado.pdf
           cp ./Resume_Messias_Savio_English.pdf ./portifolio/Resume_Messias_Savio_English.pdf
 
       - name: Upload artifact
