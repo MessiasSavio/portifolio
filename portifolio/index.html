@@ -471,55 +471,23 @@
         <p class="section-subtitle" data-i18n="contact.subtitle">Entre em contato para discutir oportunidades em ML, Data Engineering ou MLOps</p>
         
         <div class="contato-content">
-          <div class="contato-info">
-            <div class="contato-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h3 data-i18n="contact.email.label">Email</h3>
-                <p>saviochavesadm@gmail.com</p>
-              </div>
-            </div>
-            
-            <div class="contato-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h3 data-i18n="contact.whatsapp.label">WhatsApp</h3>
-                <p>+55 (88) 99968-3948</p>
-              </div>
-            </div>
-            
-            <div class="contato-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h3 data-i18n="contact.location.label">Localização</h3>
-                <p data-i18n="contact.location.value">Brasil - Disponível para trabalho remoto</p>
-              </div>
-            </div>
-          </div>
-
           <div class="contato-form">
-            <form id="contact-form" method="POST">
-              <input type="hidden" name="access_key" value="77c2f7e3-ee49-4cff-8aea-8b3b23d83e2d">
-              <input type="hidden" name="from_name" value="Portfolio Messias Sávio">
-              <input type="hidden" name="subject" value="Novo contato pelo portfolio">
-
-              <div class="form-group">
-                <input type="text" name="name" data-i18n-placeholder="contact.form.name" placeholder="Seu nome completo" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" data-i18n-placeholder="contact.form.email" placeholder="Seu melhor email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="subject" data-i18n-placeholder="contact.form.subject" placeholder="Assunto" required>
-              </div>
-              <div class="form-group">
-                <textarea name="message" data-i18n-placeholder="contact.form.message" placeholder="Sua mensagem" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="btn-primary" id="contact-submit-btn">
-                <i class="fas fa-paper-plane"></i>
-                <span data-i18n="contact.form.send">Enviar Mensagem</span>
-              </button>
-            </form>
+            <div class="contact-links">
+              <a href="https://wa.me/5588999683948?text=Olá%20Messias!%20Gostaria%20de%20conversar%20com%20você." target="_blank" class="contact-button whatsapp-btn">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <h3>Enviar WhatsApp</h3>
+                  <p>+55 (88) 99968-3948</p>
+                </div>
+              </a>
+              <a href="mailto:saviochavesadm@gmail.com?subject=Contato%20pelo%20Portfolio&body=Olá%20Messias,%0A%0AGostaria%20de%20conversar%20com%20você." class="contact-button email-btn">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h3>Enviar E-mail</h3>
+                  <p>saviochavesadm@gmail.com</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

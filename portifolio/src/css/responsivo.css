@@ -55,11 +55,6 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
     
-    .contato-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
     .image-container {
         width: 300px;
         height: 300px;
@@ -235,6 +230,15 @@
     
     .contato-form {
         padding: 1.5rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+    }
+    
+    .contact-button {
+        flex: 1 1 auto;
+        min-width: 100%;
     }
 }
 

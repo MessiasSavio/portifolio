@@ -775,10 +775,8 @@ body {
 }
 
 .contato-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
+    display: flex;
+    justify-content: center;
 }
 
 .contato-item {
@@ -814,6 +812,76 @@ body {
     padding: 2rem;
     border-radius: var(--border-radius);
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition);
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+.contact-button i {
+    font-size: 2.5rem;
+}
+
+.contact-button h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.contact-button p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.whatsapp-btn {
+    border-color: rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+    border-color: #25d366;
+    background: rgba(37, 211, 102, 0.1);
+}
+
+.whatsapp-btn i {
+    color: #25d366;
+}
+
+.email-btn {
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.email-btn:hover {
+    border-color: var(--primary-color);
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.email-btn i {
+    color: var(--primary-color);
 }
 
 .form-group {
