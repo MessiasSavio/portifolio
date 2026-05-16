@@ -141,6 +141,10 @@
         "label": "Localização",
         "value": "Brasil - Disponível para trabalho remoto"
       },
+      "buttons": {
+        "whatsapp": "Enviar WhatsApp",
+        "email": "Enviar E-mail"
+      },
       "form": {
         "name": "Seu nome completo",
         "email": "Seu melhor email",
@@ -294,6 +298,10 @@
       "location": {
         "label": "Location",
         "value": "Brazil - Available for remote work"
+      },
+      "buttons": {
+        "whatsapp": "Send WhatsApp",
+        "email": "Send Email"
       },
       "form": {
         "name": "Your full name",
