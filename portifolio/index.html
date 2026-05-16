@@ -498,10 +498,10 @@
           </div>
 
           <div class="contato-form">
-            <form id="contact-form" action="https://formsubmit.co/saviochavesadm@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="Novo contato pelo portfolio">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
+            <form id="contact-form" method="POST">
+              <input type="hidden" name="access_key" value="77c2f7e3-ee49-4cff-8aea-8b3b23d83e2d">
+              <input type="hidden" name="from_name" value="Portfolio Messias Sávio">
+              <input type="hidden" name="subject" value="Novo contato pelo portfolio">
 
               <div class="form-group">
                 <input type="text" name="name" data-i18n-placeholder="contact.form.name" placeholder="Seu nome completo" required>
@@ -515,7 +515,7 @@
               <div class="form-group">
                 <textarea name="message" data-i18n-placeholder="contact.form.message" placeholder="Sua mensagem" rows="5" required></textarea>
               </div>
-              <button type="submit" class="btn-primary">
+              <button type="submit" class="btn-primary" id="contact-submit-btn">
                 <i class="fas fa-paper-plane"></i>
                 <span data-i18n="contact.form.send">Enviar Mensagem</span>
               </button>

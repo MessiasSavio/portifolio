@@ -440,3 +440,52 @@ document.addEventListener('DOMContentLoaded', () => {
     animateElements.forEach(el => observer.observe(el));
 });
 
+// ===== CONTACT FORM HANDLER =====
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const submitBtn = document.getElementById('contact-submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Enviando...</span>';
+        
+        const formData = new FormData(contactForm);
+        const data = {
+            access_key: formData.get('access_key'),
+            from_name: formData.get('from_name'),
+            subject: formData.get('subject'),
+            name: formData.get('name'),
+            email: formData.get('email'),
+            message: formData.get('message')
+        };
+        
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                // Mensagem de sucesso
+                alert('✓ Mensagem enviada com sucesso! Obrigado pelo contato.');
+                contactForm.reset();
+            } else {
+                alert('✗ Erro ao enviar a mensagem. Tente novamente.');
+            }
+        } catch (error) {
+            console.error('Erro:', error);
+            alert('✗ Erro ao enviar a mensagem. Verifique sua conexão e tente novamente.');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+        }
+    });
+}
+
