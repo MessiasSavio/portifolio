@@ -213,6 +213,52 @@ const certificadosData = {
 
 let currentDisplayCount = 12;
 let activeFilter = 'all';
+let certificatesBasePath = './certificados';
+
+function getEncodedCertificateUrl(folderName, filename) {
+    const encodedFileName = encodeURIComponent(filename);
+    return `${certificatesBasePath}/${folderName}/${encodedFileName}`;
+}
+
+async function resolveCertificatesBasePath() {
+    const pathCandidates = ['./certificados', '../certificados'];
+    const probeFile = 'Destaques/Cloud%20Computing.pdf';
+
+    for (const candidate of pathCandidates) {
+        try {
+            const response = await fetch(`${candidate}/${probeFile}`, { method: 'HEAD' });
+
+            if (response.ok) {
+                certificatesBasePath = candidate;
+                return;
+            }
+
+            if (response.status === 405 || response.status === 501) {
+                const fallbackResponse = await fetch(`${candidate}/${probeFile}`, { method: 'GET' });
+                if (fallbackResponse.ok) {
+                    certificatesBasePath = candidate;
+                    return;
+                }
+            }
+        } catch (error) {
+            // Ignore and try next candidate path.
+        }
+    }
+}
+
+function updateFeaturedCertificateLinks() {
+    const featuredLinks = document.querySelectorAll('.view-cert');
+
+    featuredLinks.forEach(link => {
+        const currentHref = link.getAttribute('href');
+        if (!currentHref) return;
+
+        const fileName = decodeURIComponent(currentHref.split('/').pop() || '');
+        if (!fileName) return;
+
+        link.setAttribute('href', getEncodedCertificateUrl('Destaques', fileName));
+    });
+}
 
 function createCertificateCard(filename, category) {
     const name = formatCertificateName(filename);
@@ -237,7 +283,7 @@ function createCertificateCard(filename, category) {
         </div>
         <h3>${name}</h3>
         <p class="certificate-category">${getCategoryDisplayName(category)}</p>
-        <a href="./certificados/${folderName}/${filename}" target="_blank" class="view-certificate">
+        <a href="${getEncodedCertificateUrl(folderName, filename)}" target="_blank" class="view-certificate">
             <i class="fas fa-external-link-alt"></i>
             Ver Certificado
         </a>
@@ -320,7 +366,7 @@ function displayCertificates() {
 }
 
 // ===== EVENT LISTENERS =====
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     // Certificate filters
     const filterButtons = document.querySelectorAll('.filter-btn');
     filterButtons.forEach(btn => {
@@ -368,6 +414,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    await resolveCertificatesBasePath();
+    updateFeaturedCertificateLinks();
+
     // Initialize certificates display
     displayCertificates();
 });
